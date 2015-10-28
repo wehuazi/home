@@ -13,16 +13,16 @@
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>---<br>
-</span><span class="s2">　　</span><span class="s1">layout: default<br>
-</span><span class="s2">　　</span><span class="s1">title: </span><span class="s2">我的</span><span class="s1">Blog<br>
-</span><span class="s2">　　</span><span class="s1">---</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">&lt;h2&gt;{{ page.title }}&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">&lt;p&gt;</span><span class="s2">最新文章</span><span class="s1">&lt;/p&gt;</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">&lt;ul&gt;</span></p>
-<p class="p1"><span class="s2">　　　　</span><span class="s1">{% for post in site.posts %}<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s2">　　　　　　</span><span class="s1">&lt;li&gt;{{ post.date | date_to_string }} &lt;a href="{{ site.baseurl }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s2">　　　　</span><span class="s1">{% endfor %}</span></p>
-<p class="p1"><span class="s2">　　</span><span class="s1">&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1">---<br>
+layout: default<br>
+title: </span><span class="s2">我的</span><span class="s1">Blog<br>
+---</span></p>
+<p class="p1"><span class="s1">&lt;h2&gt;{{ page.title }}&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;</span><span class="s2">最新文章</span><span class="s1">&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;ul&gt;</span></p>
+<p class="p1"><span class="s2">　　</span><span class="s1">{% for post in site.posts %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s2">　　</span><span class="s1">&lt;li&gt;{{ post.date | date_to_string }} &lt;a href="{{ site.baseurl }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s2">　　</span><span class="s1">{% endfor %}</span></p>
+<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
 </body>
 </html>
